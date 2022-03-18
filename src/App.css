@@ -1,34 +1,74 @@
-.mainContainer {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 64px;
-}
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
-.dataContainer {
+.mainContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 600px;
+  align-items: center;
+  width: 100%;
+  margin: 50px 0;
 }
 
 .header {
   text-align: center;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 600;
+  margin-bottom: 20px;
+  color: black;
 }
 
 .bio {
   text-align: center;
   color: gray;
   margin-top: 16px;
+  width: 550px;
 }
 
-.waveButton {
+input {
+  border: none;
+  border-bottom: 2px solid rgb(226, 226, 226);
+  width: 28%;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
   cursor: pointer;
-  margin-top: 16px;
-  padding: 8px;
+  padding: 13px;
+  width: 550px;
+  margin: 20px 0 30px;
   border: 0;
   border-radius: 5px;
-  
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "DM Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.945);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btns {
+  margin-bottom: 10px;
+}
+
+.connect-wallet-btn {
+  background-color: #ff9050;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+
+.wave-btn {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.loading {
+  text-align: center;
+}
+
+.message {
+  padding: 9px;
 }
