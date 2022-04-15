@@ -180,6 +180,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
+    getAllWaves();
     getTotalWaves();
     checkIfWalletIsConnected();
     //eslint-disable-next-line
