@@ -7,7 +7,7 @@ import progressBar from "../src/progress-bar.gif";
 import "./App.css";
 
 export default function App() {
-  const waveContractAddress = "0xe630f72F337DeEf99F0BF879Ebb0B1C3C3489a6C";
+  const waveContractAddress = "0x38cFfadC426cE9c7255FB0282C1EBf37cf12e66C";
 
   const [currentAccount, setCurrentAccount] = useState("");
   const [totalWaves, setTotalWaves] = useState();
@@ -76,9 +76,7 @@ export default function App() {
         let count = await waveContract.getTotalWaveCount();
         console.log("Our total wave count is ", count.toNumber());
 
-        const waveTx = await waveContract.wave(inputMsg.value, {
-          gasLimit: 300000,
-        });
+        const waveTx = await waveContract.wave(inputMsg.value, {gasLimit: 300000});
         inputMsg.value = "";
         setLoading(true);
         console.log("Mining...", waveTx.hash);
@@ -103,9 +101,9 @@ export default function App() {
     try {
       const { ethereum } = window;
       if (ethereum) {
-        const provider = await new ethers.providers.Web3Provider(window.ethereum);
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
-        const waveContract = await new ethers.Contract(
+        const waveContract = new ethers.Contract(
           waveContractAddress,
           waveAbi.abi,
           signer
@@ -182,8 +180,8 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    checkIfWalletIsConnected();
     getTotalWaves();
+    checkIfWalletIsConnected();
     //eslint-disable-next-line
   }, []);
 
