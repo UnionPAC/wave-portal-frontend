@@ -1,11 +1,25 @@
 # Welcome to the Wave Station 👋 
 
 ### **Welcome!**
-To get started with this course, clone this repo and follow these commands:
+### 🚨 _This project is on the Rinkeby tesnet ....  !! **Make sure that is the network you are connected to** !!_
 
-1. Run `npm install` at the root of your directory
-2. Run `npm run start` to start the project
-3. Start coding!
+### 👋
+This project is an intro into building Dapps with Ethereum 
 
-### **Questions?**
-Have some questions make sure you head over to your [buildspace Dashboard](https://app.buildspace.so/courses/CO02cf0f1c-f996-4f50-9669-cf945ca3fb0b) and link your Discord account so you can get access to helpful channels and your instructor!
+This project outline has been put together by [buildspace](https://buildspace.so/) a great place for developers to learn more
+about web3 🌈 🛠
+
+### Project Details
+This project has been built using:
+
+- hardhat & ethers.js
+- React (create-react-app)
+
+_Note: I have another repo called 'wave-contract' which is the smart contract this project is using... check it out [here](https://github.com/UnionPAC/wave-contract)_
+
+
+### How it works 💮
+1. Connect using your MetaMask wallet
+2. Send me a message ;) (and have a 50% chance to win some ETH!)
+3. View the message board 
+
