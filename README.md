@@ -1,10 +1,9 @@
 # Welcome to the Wave Station 👋 
 
-### **Welcome!**
 ### 🚨 _This project is on the Rinkeby tesnet ....  !! **Make sure that is the network you are connected to** !!_
 
 ### 👋
-This project is an intro into building Dapps with Ethereum 
+This project is an intro into building Dapps with Ethereum. The app displays the ability to read and write to the blockchain!
 
 This project outline has been put together by [buildspace](https://buildspace.so/) a great place for developers to learn more
 about web3 🌈 🛠
