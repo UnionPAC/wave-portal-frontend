@@ -18,7 +18,7 @@ This project has been built using:
 _Note: I have another repo called 'wave-contract' which is the smart contract this project is using... check it out [here](https://github.com/UnionPAC/wave-contract)_
 
 
-### How it works 💮
+### How it works
 1. Connect using your MetaMask wallet
 2. Send me a message ;) (and have a 50% chance to win some ETH!)
 3. View the message board 
